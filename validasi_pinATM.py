@@ -14,9 +14,9 @@ def validasi_pin(pin):
 
 
 # Program utama
-pin = input("Masukkan PIN ATM: ")
-
-if validasi_pin(pin):
-    print("PIN valid!")
-else:
-    print("PIN tidak valid! PIN harus 6 digit angka.")
+if __name__ == "__main__":
+    pin = input("Masukkan PIN ATM: ")
+    if validasi_pin(pin):
+        print("PIN valid!")
+    else:
+        print("PIN tidak valid! PIN harus 6 digit angka.")
